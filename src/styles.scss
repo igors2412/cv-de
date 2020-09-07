@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+.title {
+    font-weight: 700;
+    font-size: 32px;
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+}
+
+.subtitle {
+    font-size: 24px;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 500px;
+}
+
+a {
+    color: #004899;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+.description,
+p {
+    max-width: 39rem;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 64px;
+    padding: 0;
+    font-size: 16px;
+
+    .content {
+        margin: 0 auto;
+        width: 960px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #004899;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            padding: 24px;
+            box-sizing: border-box;
+
+            @media (max-width: 960px) {
+                padding: 12px;
+            }
+
+            @media (max-width: 767px) {
+                flex-direction: row-reverse;
+            }
+
+            .name {
+                margin-bottom: 16px;
+            }
+
+            .stats {
+                display: flex;
+                flex-wrap: wrap;
+
+                section {
+                    margin-bottom: 8px;
+                }
+            }
+
+            a {
+                color: white;
+            }
+
+            section {
+                margin-right: 48px;
+
+                @media (max-width: 960px) {
+                    margin-right: 16px;
+                }
+            }
+
+            .image {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                border: 1px solid white;
+                background-image: url('assets/profile.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                @media (max-width: 960px) {
+                    height: 120px;
+                    width: 120px;
+                }
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            .links {
+                article {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+
+        .work {
+            margin-top: 48px;
+
+            @media (max-width: 960px) {
+                padding: 0 24px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 0 16px;
+            }
+
+            i {
+                color: #ffb300;
+                margin-right: 8px;
+            }
+
+            .education {
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    max-width: 500px;
+                }
+
+                i {
+                    margin-right: 16px;
+                }
+            }
+
+            .skill {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 520px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 16px;
+                }
+
+                span {
+                    margin-right: 16px;
+
+                    @media (max-width: 767px) {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .company {
+                margin-top: 32px;
+
+                .project {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
