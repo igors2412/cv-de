@@ -55,11 +55,14 @@ body {
         nav {
             display: flex;
             align-items: center;
-            background-color: #004899;
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-            color: white;
             padding: 24px;
             box-sizing: border-box;
+            background: linear-gradient(
+                to right,
+                #7aa1d2,
+                #dbd4b4,
+                #cc95c0
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
             @media (max-width: 960px) {
                 padding: 12px;
@@ -82,10 +85,6 @@ body {
                 }
             }
 
-            a {
-                color: white;
-            }
-
             section {
                 margin-right: 48px;
 
@@ -98,7 +97,6 @@ body {
                 height: 200px;
                 width: 200px;
                 border-radius: 50%;
-                border: 1px solid white;
                 background-image: url('assets/profile.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
